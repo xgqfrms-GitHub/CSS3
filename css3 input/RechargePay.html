@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recharge-pay</title>
+    <style>
+        .recharge-pay-box{
+            text-align: left;
+            background-color: #fff;
+            width: 400px;
+            color: #000;
+            border: 1px solid #cccccc;
+            border-radius: 5px 5px 0 0;
+            position: absolute;
+            /* left: calc(50%-200px);
+            top: calc(50%-200px); */
+            left: 50%;
+            top: 50%;
+            transform: translateX(-200px) translateY(-200px);
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .recharge-pay-title{
+            background-color: #199ed8;
+            color: #fff;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 5px 5px 0 0;
+            text-indent: 12px;
+            font-size: 16px;
+        }
+        .recharge-pay-box  span{
+            float: right;
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .recharge-pay-box span:hover{
+            cursor: pointer;
+        }
+        .recharge-pay-text{
+            text-align: center;
+            height: 100px;
+            /*margin-left: 50px;*/
+            margin-top: 50px;
+            width: 100%;
+            /*text-align: center;*/
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .recharge-pay-text > span{
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            text-align: center;
+            box-sizing: border-box;
+            overflow: hidden;
+            width: 400px;
+            cursor: default;
+        }
+        .recharge-pay-img{
+            height: 100px;
+        }
+        .recharge-pay-img > span{
+            /*margin-left: 50px;*/
+        }
+        .recharge-pay-img-check{
+            width: 100px;
+            height: 50px;
+            /*transparent:;*/
+            opacity: 0.01;
+            /*opacity: 0.01;*/
+            position: absolute;
+            z-index: 9999;
+            margin-top: 100px;
+            top: 100px;
+            left: 50px;
+        }
+        .recharge-pay-img-check:hover{
+            cursor: pointer;
+        }
+        span.alipay{
+            background: url(alipay-src.png) no-repeat center;
+            background-position: 0 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            width: 98px;
+            height: 44px;
+            position: absolute;
+            top: 200px;
+            left: 50px;
+        }
+        .recharge-pay-img-check:checked ~ span.alipay{
+            /*border: 1px solid red;*/
+            /*display: block;*/
+            background: url(alipay.png) no-repeat center;
+            /*background-position: -0.5px 3px;*/
+            width: 98px;
+            height: 44px;
+        }
+        .recharge-pay-btn{
+            background-color: #199ed8;
+            color: #fff;
+            width: 150px;
+            text-align: center;
+            margin-left: 100px;
+            margin-bottom: 50px;
+            width: 200px;
+            line-height: 30px;
+            height: 30px;
+        }
+        .recharge-pay-btn:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="recharge-pay-box">
+        <div class="recharge-pay-title">
+            充值<span>X</span>
+        </div>
+        <div class="recharge-pay-text">
+            <span>充值金额：￥99999.50</span>
+        </div>
+        <div class="recharge-pay-img">
+            <span>请选择支付方式</span><br>
+            <input type="checkbox" class="recharge-pay-img-check">
+            <!-- <img class="alipay" src="alipay-src.png" alt=""> -->
+            <span class="alipay">&nbsp;</span>
+        </div>
+        <button class="recharge-pay-btn">下一步</button>
+    </div>
+</body>
+</html>
