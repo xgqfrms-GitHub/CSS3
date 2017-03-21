@@ -107,7 +107,7 @@ https://gist.github.com/xgqfrms-GitHub/7bb92ccb71a6c558708f24172bf1898d
         }
         .account-info-text-btn button:first-child{
             width: 50px;
-            background: #CCE4F7;
+            background: #14b5b0;
         }
         .account-info-text-btn button{
             width: 100px;
